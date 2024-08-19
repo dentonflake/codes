@@ -28,7 +28,7 @@ body {
 }
 
 .logo {
-    padding: 10px;
+    padding: 10px 0;
 
 }
 
@@ -74,6 +74,11 @@ body {
     color: white;
 }
 
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, 1);
+    padding: 10px 0;
+}
+
 @media only screen and (max-width: 500px) {
     .logo-image {
         width: 60px;
@@ -89,6 +94,10 @@ body {
     }
 
     .button {
+        font-size: 12px;
+    }
+
+    .footer p {
         font-size: 12px;
     }
 }
