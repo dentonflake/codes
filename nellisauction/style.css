@@ -40,6 +40,15 @@ body {
     padding: 10px;
 }
 
+.brand {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 20px;
+}
+
 .main {
     display: flex;
     justify-content: center;
@@ -63,4 +72,23 @@ body {
     transition: 0.5s;
     background-color: black;
     color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .logo-image {
+        width: 50px;
+    }
+    
+    .brand {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+    .title {
+        font-size: 15px;
+    }
+
+    .button {
+        font-size: 10px;
+    }
 }
