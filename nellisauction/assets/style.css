@@ -91,6 +91,10 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+    body {
+        padding: 30px;
+    }
+    
     #logo {
         width: 60px;
         height: 60px;
