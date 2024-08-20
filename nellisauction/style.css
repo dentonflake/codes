@@ -34,7 +34,6 @@ header {
 
 #details {
     padding: 8px;
-
 }
 
 #title {
@@ -44,6 +43,7 @@ header {
 
 #subtitle {
     font-size: 20px;
+    font-weight: 400px;
 }
 
 main {
