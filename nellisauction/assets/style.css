@@ -95,6 +95,7 @@ footer {
     font-size: 15px;
     font-weight: 600;
     align-items: center;
+    flex-direction: column;
 }
 
 #links a:hover {
