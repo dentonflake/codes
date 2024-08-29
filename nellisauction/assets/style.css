@@ -63,7 +63,6 @@ main {
 
 .button {
     text-decoration: none;
-    /* border: 1px black solid; */
     border-radius: 8px;
     padding: 20px;
     width: 100%;
@@ -80,7 +79,7 @@ main {
 
 .button:hover {
     transition: 0.3s;
-    background-color: rgba(25, 25, 25, 1);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
 
