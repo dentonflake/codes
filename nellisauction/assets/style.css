@@ -118,6 +118,12 @@ footer {
         height: 60px;
     }
 
+    header {
+        background-color: rgba(0, 0, 0, 0.8);;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
     #details {
         padding: 6px;
     }
@@ -132,8 +138,8 @@ footer {
     }
 
     .button {
-        font-size: 13px;
-        padding: 15px;
+        font-size: 12px;
+        padding: 10px;
     }
 
     footer {
@@ -142,6 +148,7 @@ footer {
     }
 
     #container {
-        padding: 30px;
+        padding: 0px;
+        background-color: rgba(0, 0, 0, 0);
     }
 }
