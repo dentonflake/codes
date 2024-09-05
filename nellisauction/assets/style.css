@@ -110,7 +110,7 @@ footer {
 
 @media only screen and (max-width: 800px) {
     body {
-        padding: 50px;
+        padding: 30px;
     }
 
     #logo {
