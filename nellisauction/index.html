@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nellis Auction</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+            font-optical-sizing: auto;
+            font-family: "Montserrat", sans-serif;
+        }
+        
+        body {
+            background-image: linear-gradient(
+                rgba(0, 89, 124, 0.8),
+                rgb(1, 85, 100)
+            );
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        header {
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+        
+        #title {
+            color: rgba(255, 255, 255, 1);
+            font-size: 20px;
+            font-weight: 400;
+        }
+        
+        main {
+            padding: 50px;
+        
+            display: flex;
+            justify-content: center;
+        }
+        
+        #grid-container {
+            width: 100%;
+            max-width: 1000px;
+        
+            display: grid;
+            grid-gap: 30px;
+        
+            grid-template-columns: repeat(3, 1fr);
+        
+            grid-template-areas:
+                'announcements announcements announcements'
+                'goals processing processing'
+                'returns returns tools';
+        }
+        
+        .grid-item {
+            border-radius: 25px;
+            background-color: white;
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .grid-item-title {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 25px;
+        }
+        
+        h1 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .grid-item-content {
+            padding: 25px;
+        }
+        
+        .item-link {
+            text-decoration: none;
+        }
+        
+        .item-link-content {
+            padding: 20px;
+            color: black;
+            background: rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            border-radius: 10px;
+            font-weight: 400;
+        }
+        
+        .item-link-content:hover {
+            transition: 0.3s;
+            background-color: rgba(0, 123, 167, 0.647);
+        }
+        
+        #announcements {
+            grid-area: announcements;
+        }
+        
+        #goals {
+            grid-area: goals;
+        }
+        
+        #processing {
+            grid-area: processing;
+        }
+        
+        #returns {
+            grid-area: returns;
+        }
+        
+        #tools {
+            grid-area: tools;
+        }
+        
+        @media only screen and (max-width: 1125px) {
+            #grid-container {
+                max-width: 750px;
+        
+                grid-template-columns: repeat(2, 1fr);
+        
+                grid-template-areas:
+                    'announcements announcements'
+                    'goals processing'
+                    'returns tools';
+            }
+        }
+        
+        @media only screen and (max-width: 875px) {
+            header {
+                display: flex;
+                justify-content: center;
+            }
+            
+            main {
+                padding: 20px;
+            }
+        
+            #grid-container {
+                max-width: 500px;
+        
+                grid-template-columns: repeat(1, 1fr);
+        
+                grid-template-areas:
+                    'announcements'
+                    'goals'
+                    'processing'
+                    'returns'
+                    'tools';
+        
+                grid-gap: 15px;
+            }
+        
+            .grid-item {
+                border-radius: 15px;
+            }
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="title">Nellis Auction</div>
+    </header>
+
+    <main>
+        <div id="grid-container">
+            <div class="grid-item" id="announcements">
+                <div class="grid-item-title">
+                    <h1>Announcements 📢</h1>
+                </div>
+                <div class="grid-item-content">
+                    You are all up to date! 🥳
+                </div>
+            </div>
+
+            <div class="grid-item" id="goals">
+                <div class="grid-item-title">
+                    <h1>Goals 🟢🟡🟠</h1>
+                </div>
+                <div class="grid-item-links">
+                    <a target="_blank"
+                        href="https://docs.google.com/spreadsheets/d/1_eLotxRw_D2bAwxDy7nYLErE9yrgPQRcml_uKqt9xcE/edit?gid=851619451#gid=851619451"
+                        class="item-link">
+                        <div class="item-link-content">📸 Inventory Processing</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid-item" id="processing">
+                <div class="grid-item-title">
+                    <h1>Inventory Processing 📸</h1>
+                </div>
+                <div class="grid-item-links">
+                    <a target="_blank" href="https://drive.google.com/file/d/1U2l_h5zUST-BgnrNfU4a1LwEVKPHYVMt/view"
+                        class="item-link">
+                        <div class="item-link-content">📖 Guidelines</div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1X3YJ9q3aTw4JT6CAUE0cOAQsv2Vcfj2F/view"
+                        class="item-link">
+                        <div class="item-link-content">🛍️ How do I create packs of items?</div>
+                    </a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1W9FW58EcGTwoo-LbLHdNTdoaK9ZIGjTS/view"
+                        class="item-link">
+                        <div class="item-link-content">🗑️ What should I trash?</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid-item" id="returns">
+                <div class="grid-item-title">
+                    <h1>Returns ♻️</h1>
+                </div>
+                <div class="grid-item-links">
+                    <a target="_blank"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfnkSPRyewalxC05q16uoVTbdZyVFa5J4vwBrvbumlKXJs-mg/viewform"
+                        class="item-link">
+                        <div class="item-link-content">⚠️ Quality Control</div>
+                    </a>
+                    <a target="_blank"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSegbWH8t6gA2cXBrMWEPkjz-QsVYHMFKTIP20xD8NYaB7PfKg/viewform"
+                        class="item-link">
+                        <div class="item-link-content">🛒 Missing Returns</div>
+                    </a>
+                    <a target="_blank"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfk2osX9oTUfjpxp-pc5xf1tpYfodiTyubSaIoGUDAU0KJqTA/viewform"
+                        class="item-link">
+                        <div class="item-link-content">🚫 Non-Refundable</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid-item" id="tools">
+                <div class="grid-item-title">
+                    <h1>Tools 🔨</h1>
+                </div>
+                <div class="grid-item-links">
+                    <a target="_blank" href="https://cargo.nellisauction.com/" class="item-link">
+                        <div class="item-link-content">🏢 Cargo</div>
+                    </a>
+                    <a target="_blank" href="https://www.barcodelookup.com/" class="item-link">
+                        <div class="item-link-content">🔍 Barcode Lookup</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
