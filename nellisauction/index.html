@@ -12,80 +12,83 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        
+
             font-optical-sizing: auto;
             font-family: "Montserrat", sans-serif;
         }
-        
+
         body {
-            background-image: linear-gradient(
-                rgba(0, 89, 124, 0.8),
-                rgb(1, 85, 100)
-            );
+            background-image: linear-gradient(rgba(0, 89, 124, 0.8),
+                    rgb(1, 85, 100));
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
         }
-        
+
         header {
             padding: 15px;
-            background-color: rgba(0, 0, 0, 0.25);
+            background-color: rgb(21, 67, 89);
+
+            position: fixed;
+            top: 0;
+            width: 100%;
         }
-        
+
         #title {
             color: rgba(255, 255, 255, 1);
             font-size: 20px;
             font-weight: 400;
         }
-        
+
         main {
-            padding: 50px;
-        
+            margin-top: 80px;
+            padding: 20px;
+
             display: flex;
             justify-content: center;
         }
-        
+
         #grid-container {
             width: 100%;
             max-width: 1000px;
-        
+
             display: grid;
             grid-gap: 30px;
-        
+
             grid-template-columns: repeat(3, 1fr);
-        
+
             grid-template-areas:
                 'announcements announcements announcements'
                 'goals processing processing'
                 'returns returns tools';
         }
-        
+
         .grid-item {
             border-radius: 25px;
             background-color: white;
             box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
             overflow: hidden;
         }
-        
+
         .grid-item-title {
             background-color: rgba(0, 0, 0, 0.2);
             padding: 10px 25px;
         }
-        
+
         h1 {
             font-size: 18px;
             font-weight: 600;
         }
-        
+
         .grid-item-content {
             padding: 25px;
         }
-        
+
         .item-link {
             text-decoration: none;
         }
-        
+
         .item-link-content {
             padding: 20px;
             color: black;
@@ -94,70 +97,70 @@
             border-radius: 10px;
             font-weight: 400;
         }
-        
+
         .item-link-content:hover {
             transition: 0.3s;
             background-color: rgba(0, 123, 167, 0.647);
         }
-        
+
         #announcements {
             grid-area: announcements;
         }
-        
+
         #goals {
             grid-area: goals;
         }
-        
+
         #processing {
             grid-area: processing;
         }
-        
+
         #returns {
             grid-area: returns;
         }
-        
+
         #tools {
             grid-area: tools;
         }
-        
+
         @media only screen and (max-width: 1125px) {
             #grid-container {
                 max-width: 750px;
-        
+
                 grid-template-columns: repeat(2, 1fr);
-        
+
                 grid-template-areas:
                     'announcements announcements'
                     'goals processing'
                     'returns tools';
             }
         }
-        
+
         @media only screen and (max-width: 875px) {
             header {
                 display: flex;
                 justify-content: center;
             }
-            
+
             main {
-                padding: 20px;
+                margin-top: 50px;
             }
-        
+
             #grid-container {
                 max-width: 500px;
-        
+
                 grid-template-columns: repeat(1, 1fr);
-        
+
                 grid-template-areas:
                     'announcements'
                     'goals'
                     'processing'
                     'returns'
                     'tools';
-        
+
                 grid-gap: 15px;
             }
-        
+
             .grid-item {
                 border-radius: 15px;
             }
@@ -250,10 +253,14 @@
                     <a target="_blank" href="https://cargo.nellisauction.com/" class="item-link">
                         <div class="item-link-content">🏢 Cargo</div>
                     </a>
-                    <a target="_blank" href="https://drive.google.com/file/d/1eYSLZhdEtIGl2TUMaurLpYw9PL-o_kMb/view?usp=sharing" class="item-link">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1eYSLZhdEtIGl2TUMaurLpYw9PL-o_kMb/view?usp=sharing"
+                        class="item-link">
                         <div class="item-link-content">📕 Employee Handbook</div>
                     </a>
-                    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScthquLnvMAqgGESm7hjZ4gnctFBSqOaUavgfD4TrPa3ZUzFQ/viewform" class="item-link">
+                    <a target="_blank"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScthquLnvMAqgGESm7hjZ4gnctFBSqOaUavgfD4TrPa3ZUzFQ/viewform"
+                        class="item-link">
                         <div class="item-link-content">📱The DL</div>
                     </a>
                     <a target="_blank" href="https://www.barcodelookup.com/" class="item-link">
@@ -266,4 +273,3 @@
 </body>
 
 </html>
-
